@@ -171,15 +171,9 @@ export default function Contact() {
         </svg>
       </div>
       <div className='grid grid-cols-3 gap-3 md:w-1/2'>
-        <BlackIconWrapper
-          icon={faInstagram}
-          target='https://www.instagram.com/thecodedose/'
-        />
-        <RedIconWrapper icon={faXTwitter} target="https://x.com/thecodedose" />
-        <BlackIconWrapper icon={faYoutube} target="https://www.youtube.com/channel/UCUqYu_GiAzFL4ErDEiK9xbA" />
-        <RedIconWrapper icon={faLinkedinIn} target="https://www.linkedin.com/in/ihsavru/" />
-        <BlackIconWrapper icon={faGithub} target="https://github.com/thecodedose"  />
-        <RedIconWrapper icon={faEnvelope} target="urvashi@thecodedose.com" isEmail />
+        <RedIconWrapper icon={faLinkedinIn} target="https://www.linkedin.com/in/kumar-harshh/" />
+        <BlackIconWrapper icon={faGithub} target="https://github.com/kumarharshh"  />
+        <RedIconWrapper icon={faEnvelope} target="kumarharshh18@gmail.com" isEmail />
       </div>
     </>
   )
