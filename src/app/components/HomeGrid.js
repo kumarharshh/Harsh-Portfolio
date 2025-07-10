@@ -73,6 +73,7 @@ export default function HomeGrid({ setCurrentGrid, animatedStyles }) {
         className='md:col-span-3 md:row-span-3'
       >
         <animated.div
+          onClick={() => setCurrentGrid(GRIDS[3])}
           style={trails[2]}
           className='relative h-full w-full border border-neutral-900 bg-[#9ad1ea]'
         >
