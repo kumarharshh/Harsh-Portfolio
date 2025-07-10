@@ -2,13 +2,13 @@ import { useEffect, useState } from "react"
 import { useTrail, animated, easings } from "@react-spring/web"
 import { GRIDS } from "../constants"
 
-export default function ProjectsGrid({ setCurrentGrid, animatedStyles }) {
+export default function EducationsGrid({ setCurrentGrid, animatedStyles }) {
   const [nameIdx, setNameIdx] = useState(0)
-  const name = "Projects".split("")
+  const name = "Education".split("")
 
   const [subheadingIdx, setSubheadingIdx] = useState(0)
   const subheading =
-    "Here are a few personal projects I've worked on over the years".split("")
+    "Here are the places I've studied at over the years".split("")
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -89,6 +89,11 @@ export default function ProjectsGrid({ setCurrentGrid, animatedStyles }) {
             <span className='lg:text-md text-[#BC4749]'>
               {subheading.slice(0, subheadingIdx).join("")}
               <span className='inline-block w-3 h-0.5 mx-1 bg-[#2A9D8F] animate-pulse'></span>
+            </span>
+          </div>
+          <div className='border text-center border-neutral-900 bg-[#F2E8CF] w-fit px-5 py-2'>
+            <span className='text-2xl font-bold text-[#F4A261]'>
+              🔙
             </span>
           </div>
         </animated.div>
